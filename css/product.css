@@ -1,0 +1,560 @@
+body,ol,ul,li,div,h1,h2,h3,h4,h5,h6{
+padding:0;
+margin:0;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:400;
+	font-size:100%;
+}
+li,ol,ul{
+	list-style:none;
+}
+a,a:hover{
+	text-decoration:none;
+	color:black;
+}
+.J-mainNaxBox{
+	width:980px;
+	height:60px;
+	margin:0 auto;
+/*	background:yellow;*/
+	display:flex;
+	justify-content:space-between;
+}
+
+#nav{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+#nav li{
+	padding:0px 10px 0px 0px;
+	margin:16px 14px 0px 0px;
+	text-decoration:none;
+	float:left;
+}
+#nav li>a{
+	text-decoration:none;
+	padding:0px 4px 3px 4px;
+	
+}
+#nav li:nth-child(3)>a{
+	border-bottom:3px solid black;
+}
+/*<!--逛设计  -->*/
+/*			<div class="design_top">*/
+/*				<i></i>*/
+/*				<h2>逛商品</h2>*/
+/*			</div>*/
+.design_wrap{
+	width: 980px;
+    height: 310px;
+    margin:5px auto 55px;
+
+}
+.design_wrap .design_top{
+	height:10px;
+	border-bottom:4px solid #231F20;
+}
+.design_wrap .design_top i {
+    background: url(../images/list/design_bar.png) no-repeat;
+    width: 73px;
+    height: 5px;
+    display: inline-block;
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+.design_wrap .design_top h2{
+	font-size:14px;
+	position:relative;
+	left:-38px;
+	top:-1px;
+}
+/*<!--商品列表-->
+			<ul class="design_list">
+				<li class="list_nav_1">
+					<div class="list1">
+						<a href="">女人广场</a>
+					</div>
+					<div class="list2">
+						<a href="">上衣</a>
+						<a href="">下装</a>
+						<a href="">包装</a>
+						<a href="">鞋靴</a>
+						<a href="">配饰</a>
+					</div>
+				</li>
+			</ul>
+		</div>*/
+.design_wrap .design_list{
+	margin-top: 5px;
+    width: 994px;
+}
+.design_wrap .design_list li{
+	width:237px;
+	height:140px;
+	border:1px solid #E6E7E8;
+	border-bottom:2px solid #E6E7E8;
+	float:left;
+	margin:0 9px 5px 0;
+}
+
+.design_wrap .design_list .list1{
+	width:41px;
+	height:45px;
+	margin:50px auto;
+	float:left;
+	border-right:1px solid black;
+	font-size:14px;
+	padding:0 10px 0 34px;
+	text-align:right;
+}
+.design_wrap .design_list .list1 a:hover{
+	color:#62BBC4;
+}
+.design_wrap .design_list .list2{
+	width:140px;
+	height:79px;
+	margin:50px auto;
+	float:right;
+	padding-left:10px;
+}
+.design_wrap .design_list .list2 a{
+	padding: 0 6px 1px 6px;
+	float:left;
+	margin:0 2px 8px 6px;
+	color:#777;
+	font-size:12px;
+	border:1px solid #fff;
+	border-radius:30px;
+	text-align:center;
+}
+.design_wrap .design_list .list2 a:hover{
+	border:1px solid #e0bca5;
+}
+.design_wrap .design_list .list_nav_4 .list1{
+	width:71px;
+}
+.design_wrap .design_list .list_nav_4 .list2 {
+	width:111px;
+}
+.design_wrap .design_list .list_nav_8 .list1{
+	padding-left:50px;
+	width:54px;
+}
+.design_wrap .design_list .list_nav_8 .list2 {
+	width:111px;
+	color:#62BBC4;
+	font-size:12px;
+	position:relative;
+	left:15px;
+}
+.design_wrap .design_list .list_nav_3>.list1,.design_wrap .design_list .list_nav_6>.list1,.design_wrap .design_list .list_nav_7>.list1{
+	width:51px;
+	padding:0 10px 0 25px;
+}
+.design_wrap .design_list .list_nav_1{
+	background:url(../images/list/design_list_bg1.png) no-repeat right bottom;
+}
+.design_wrap .design_list .list_nav_2{
+	background:url(../images/list/design_list_bg2.png) no-repeat right bottom;
+}
+.design_wrap .design_list .list_nav_3{
+	background:url(../images/list/design_list_bg3.png) no-repeat right bottom;
+}
+.design_wrap .design_list .list_nav_4{
+	background:url(../images/list/design_list_bg4.png) no-repeat right bottom;
+}
+.design_wrap .design_list .list_nav_5{
+	background:url(../images/list/design_list_bg5.png) no-repeat right bottom;
+}
+.design_wrap .design_list .list_nav_6{
+	background:url(../images/list/design_list_bg6.png) no-repeat right bottom;
+}
+.design_wrap .design_list .list_nav_7{
+	background:url(../images/list/design_list_bg7.png) no-repeat right bottom;
+}
+.design_wrap .design_list .list_nav_8{
+	background:url(../images/list/design_list_bg8.png) no-repeat right bottom;
+}
+/*逛商品*/
+/*<section class="filter-wrap clearfix">
+			<h2>逛商品</h2>
+			<div class="goods-filter">
+				<a href="">最新</a>
+				<a href="">推荐</a>
+				<a href="">最热</a>
+			</div>*/
+.filter-wrap{
+	margin:0 auto 35px;
+	padding:0px;
+	width: 980px;
+    position:relative;
+       padding-bottom: 35px;
+}
+.filter-wrap h2{
+	border-left:5px solid #000;
+	border-right:5px solid #000;
+	float:left;
+	font-size:18px;
+	height:20px;
+	line-height:20px;
+	padding:0 7px;
+	background:#fff;
+}
+.goods-filter{
+	float:left;
+	padding:0 15px 0 15px;
+	font-size:13px;
+	background:#fff;
+}
+.goods-filter a{
+	padding:2px 13px 2px 13px;
+	background:#ececec;
+	color:#808285;
+	border-radius:30px;
+	margin:0 5px 0 5px;
+}
+.goods-filter .current{
+	background: #000;
+    color: #fff;
+}
+.goods-filter a:nth-child(2):hover,.goods-filter a:nth-child(3):hover{
+	background: #666666;
+    color: #fff;
+}
+.filter-wrap i{
+	background:url(../images/list/filter-wrap/site_dotted.png) repeat-x center;
+	width:980px;
+	height:20px;
+	position: absolute;
+	top:-3px;
+	left:0px;
+  z-index:-1;
+}
+/*逛商品*/
+/*<section class="goods-contenter">
+			<div class="good-item">
+				<div class="pic">
+					<a href=""><img src="../images/list/goods-contenter/goods-contenter1.jpg" alt=""> </a>
+				</div>
+				<div class="good-bwrap">
+					<div class="overlay"></div>
+					<div class="price">
+						<span>￥185.00</span>
+						<div class="like-state">
+							<a href="" title="喜欢"><i></i></a>
+						</div>
+						<div class="like-num ">
+							<div class="J_scrollup">0</div>
+							<div>+1</div>
+						</div>
+					</div>
+					<div class="user-comment"></div>
+				</div>
+				<div class="user-comment">
+					<!-- 评论框 -->
+					<div class="share-user-d1">
+						<div>
+							<a href="">
+								无极
+								<span>的全部商品</span>
+							</a> 
+						</div>
+						<div><a href="">秋冬</a></div>
+						<div><ins></ins></div>
+						<div><a href="">棉衣</a></div>
+					</div>
+					<div class="comment clearfix">
+						<div class="user-list">
+							<div class="like_user">
+								<a href="" class="f1"><img class="avt32 f1" src="" alt=""></a>
+								<div class="comment_des">
+									<span class="comment_desc">评论</span>
+									<h3>
+										<a href="">Lovers</a>
+									</h3>
+									<a href="">
+										<p>款式:套头 货号:A047-W02 版型:直筒 领型:连帽 颜色:白色 藏青...</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+*/
+.goods-contenter{
+	clear: both;
+    width: 980px;
+    margin: 0 auto -41px auto;
+    text-align: center;
+	
+	
+}
+
+.good-item{
+	float: left;
+    display: inline;
+    text-align: left;
+    position: relative;
+    width: 290px;
+    margin: -38px 16.5px 60px 0px;
+    padding: 10px 10px 19px 10px;
+/*    z-index: 1;*/
+    background: #fff;
+	border:1px solid transparent;
+	}
+.good-item:hover{
+border:1px solid #dadada;
+}
+.good-item .pic {
+	height:290px;
+    width: 290px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    background: none;
+}
+.good-item .good-bwrap {
+    width: 180px;
+    margin: 20px auto 0 auto;
+}
+.good-item .overlay {
+    height: 12px;
+    border-bottom: 1px solid #BBBDBF;
+}
+.good-item .price {
+    position: relative;
+    top: -12px;
+    z-index: 99;
+    color: #000;
+    background-color: #fff;
+    margin: 0 auto;
+    width: 125px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+	font-size:12px;
+	margin-left:24px;
+	padding-left:7px;
+}
+.good-item .like-state {
+width:55px;
+height:24px;
+float:right;
+/*background:url(../images/list/goods-contenter/like.png);*/
+}
+.good-item .like-state>a{
+	display:inline-block;
+	width:31px;
+	height:22px;
+	padding-left: 5px;
+	position:absolute;
+	z-index:12;
+}
+.good-item .like-state .ico-likes{
+height:22px;
+width:7px;
+display:inline-block;
+color:#000;
+float:left;
+background:url(../images/list/goods-contenter/like.png)2px 6px no-repeat;
+position:relative;
+top:-1px;
+left:-3px;
+padding:0 10px 0px 0px;
+}
+.good-item .price .like-state .like-num {
+    height:24px;
+    text-align: left;
+	text-align:center;
+    padding-left: 21px;
+    position: relative;
+	top:-1px;
+	transition:all .5s linear;
+}
+.good-item .price .like-state .like-num>div{
+	margin:0;
+	padding:0px;
+}
+/*<div class="user-comment">*/
+/*					<!-- 评论框 -->*/
+/*					<div class="share-user-d1">*/
+/*						<div>*/
+/*							<a href="">*/
+/*								无极*/
+/*								<span>的全部商品</span>*/
+/*							</a> */
+/*						</div>*/
+/*						<div class="good-title1"><a href="">秋冬</a></div>*/
+/*						<div><ins></ins></div>*/
+/*						<div class="good-title2"><a href="">棉衣</a></div>*/
+/*					</div>*/
+/*				</div>
+						<div class="good-type-title">
+							<a href="">秋冬</a>
+							<ins></ins>
+							<a href="">棉衣</a>
+						</div>
+无极 的全部商品
+秋冬
+棉衣*/
+/**/
+.share-user-d1 div:first-child>a{
+	height:17px;
+/*	min-width:28px;*/
+	display:inline-block;
+	padding:2px 10px;
+	overflow:hidden;
+	border-radius:20px;
+/*	transition:all .4s linear;*/
+}
+.share-user-d1 div:first-child>a>span:nth-child(2){
+	display:none;
+}
+.share-user-d1 div:first-child>a:hover{
+/*	min-width:106px;*/
+	background:#000;
+	border-radius:20px;
+/*	transition:all .5s linear;*/
+}
+.user-comment{
+	width:211px;
+	margin:0 auto;
+}
+.user-comment .share-user-d1{
+	width: 100%;
+    text-align: center;
+    zoom:1;
+    font-size: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 20px;
+    letter-spacing: 2px;
+	 background: url(../images/list/goods-contenter/dot2.png) repeat-x scroll center bottom;
+}
+.user-comment .share-user-d1>div{
+	margin-bottom:6px;
+}
+ins {
+	display:inline-block;
+    width: 4px;
+    height: 4px;
+    background-color: #9E9E9E;
+    border-radius: 20px;
+	}
+.good-type-title>a{
+	display:inline-block;
+	padding:10px 4px 16px 7px;
+	margin-top:5px;
+	
+}
+.good-type-title>a:hover{
+	text-decoration:underline;
+	padding-bottom:2px;
+
+}
+/*<div class="comment clearfix">
+						<div class="user-list">
+							<div class="like_user">
+								<a href="" class="f1"><img class="avt32 f1" src="images/list/goods-contenter/user1.jpg" alt=""></a>
+								<div class="info commit_friend">
+									<span class="comment_desc">评论</span>
+									<h3>
+										<a href="">Lovers</a>
+									</h3>
+									<a href="">
+										<p>款式:套头 货号:A047-W02 版型:直筒 领型:连帽 颜色:白色 藏青...</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>*/
+
+.good-item .comment {
+    margin-top: -5px;
+	background: url(../images/list/goods-contenter/dot2.png) repeat-x bottom;
+}
+.like_user .f1{
+	width:50px;
+	height:50px;
+	border-radius:50%;
+	margin-top:4px;
+	display:inline-block;
+	float:left;
+}
+.info{
+	width: 125px;
+    min-height: 21px;
+    padding: 5px 10px 20px 10px;
+    margin: 0 0 0 38px;
+	font-size:12px;
+}
+.info p{
+	margin:0px;
+	padding:0px;
+    color: #929497;
+    word-break: break-all;
+    max-height: 58px;
+    overflow: hidden;
+}
+/* <!--页码-->
+        <div id="pages">
+          <!-- <a href="#" class="previous disabled">上一页</a>
+          <a href="#" class="current">1</a>
+          <a href="#">2</a> -->
+          <!-- <a href="#" class="next">下一页</a> -->
+        </div>*/
+#pages{
+	clear:both;
+	width:980px;
+	text-align:center;
+	margin:47px auto;
+	
+}
+#pages a{
+	font-size:12px;
+	display:inline-block;
+	background:#e6e6e6;
+	color:#484848;
+	margin-right:10px;
+	
+	text-align:center;
+	padding:5px 10px 5px 10px;
+}
+#pages a:hover{
+	background:#000;
+	color:#fff;
+}
+#pages a.current{
+    border-color:#0aa1ed;
+   background:#000;
+	color:#fff;
+}
+#pages a.disabled{
+    color:#bfbfbf;
+    background:#f2f2f2;
+    border:1px solid #bfbfbf;
+}
+.box{
+	display:flex;
+	justify-content:space-between;
+}
+.box #box-left{
+	width:290px;
+	min-height:290px;
+/*	background:pink;*/
+}
+.box #box-center{
+	width:290px;
+	min-height:290px;
+/*	background:yellow;*/
+}
+.box #box-right{
+	width:290px;
+	min-height:290px;
+/*	background:blue;*/
+}
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/header.css">
+    <title>注册</title>
+    <style>
+        body{
+            background:url(images/login/brickwall.png);
+        }
+		.register-content{
+			margin:0 auto;
+			width:645px;
+			background:rgba(255,255,255,0.4);
+			
+		}
+		.register{
+			padding-left:112px;
+		}
+		.register p{
+			height:50px;
+			font-size:22px;
+			font-weight:bold;
+			margin:0 auto;
+		}
+        .register_wrapper{
+            width:980px;
+            margin:0 auto;
+            height:78px;
+            line-height:78px;
+			font-weight:bold;
+        }
+		.register-content .item{
+			margin-top:25px;
+		}
+       .register input{
+            width:291px;
+           height:50px;
+           box-sizing: border-box;
+		   padding-left:10px;
+		   border-style: none;
+		   border-radius:3px;
+		   border:1px solid rgba(0,0,0,0.3);
+        }
+		.register-content .register .sex{
+			width:25px;
+			height:15px;
+		}
+		.register-content .register .item span{
+			height:16px;
+			line-height:16px;
+			padding:3px;
+			border-radius:3px;
+			font-size:12px;
+			margin-left:3px;
+		}
+		.register-content .register .submit{
+			width:120px;
+			height:40px;
+			margin:0 auto;
+			position:relative;
+			left:82px;
+			background:#000;
+			color:#fff;
+			border-style: none;
+			border-radius:4px;
+		}
+    </style>
+<head>
+<body>
+    <div class="register_wrapper">
+    <div class="title-nav">
+        <p class="title-pic">
+            <a href="">
+                <img src="images/login/login_logo.jpg" alt="">
+            </a>
+        </p>
+    </div>
+    <div class="register-content">
+        <form action="data/register.php"  class="register" type="get">
+            <p>用户注册</p>
+            <div class="item">
+                &nbsp; &nbsp;用户名：<input type="text" name="uname" class="name" placeholder="请输入用户名">
+                <span style="display:none" >用户名长度在6-9位之间</span><br>
+                登录密码：<input type="password" name="pwd" class="pwd" placeholder="请输入密码">
+                <span style="display:none" class="tishi">密码长度在6-12之间</span><br>
+                确认密码：<input type="Password" name="repwd" class="repwd" placeholder="请确认密码">
+                <span style="display:none">密码长度在6-12之间</span><br>
+                &nbsp; &nbsp; &nbsp; &nbsp;性别：<label ><input type="radio" name="sex" value="0" class="sex" checked >女</label>
+                                <label ><input type="radio" name="sex" value="1" class="sex" checked >男</label>
+                <br>
+                &nbsp; &nbsp;&nbsp; &nbsp;姓名：<input type="text" name="user_name" class="user_name" placeholder="请输入您的姓名">
+                <span style="display:none">密码长度在6-12之间</span><br>
+                &nbsp;&nbsp;&nbsp;手机号：<input type="text" name="phone" class="phone" placeholder="请输入您的手机号">
+                <span style="display:none" class="tishi">输入符合要求的手机号</span><br>
+                &nbsp; &nbsp; &nbsp; &nbsp;邮箱：<input type="text" name="email" class="email" placeholder="请输入邮箱地址">
+                <span style="display:none">请输入合法的邮箱地址</span><br>
+                <input type="submit" value="提交注册信息" class="btn btn-default submit" name="usubmit"  >
+            </div>
+        </form>
+    </div>
+    </div>
+        <script src="js/jquery-1.11.3.js"></script>
+<!--         <script src="js/jquery-3.2.1.js"></script> -->
+        <script src="js/register.js"></script>
+</body>
+</html>

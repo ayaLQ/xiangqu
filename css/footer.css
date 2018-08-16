@@ -1,0 +1,139 @@
+body,ul,li{
+	padding:0px;
+	margin:0px;
+}
+a{
+	text-decoration:none;
+}
+ul,li{
+	list-style:none;
+}
+.footer{
+	clear:both;
+	background:#000;
+	height:280px;
+	padding:0px;
+	margin:0px;
+}
+.footer a:hover{
+	text-decoration:underline;
+}
+.footer-box{
+	width:980px;
+	height:280px;
+/*	position:relative;*/
+/*	left:12px;*/
+	margin:0 auto;
+	background:#000;
+	display:flex;
+	justify-content:space-between;
+}
+.footer-right{
+/*	height:280px;*/
+}
+.footer-left{
+	width:726px;
+/*	height:280px;*/
+}
+
+/*<div class="say">“设计不是一种技能，而是捕捉事物本质的感觉能力和洞察能力。”</div>
+					<p class="word">by <span>原研哉</span></p>
+					<div class="copyright">
+						<ul>*/
+.weibo{
+	display:inline-block;
+	width:26px;
+	height:18px;
+	vertical-align:middle;
+	background:url(../images/footer/ico_common.png)-224px -5944px no-repeat;
+}
+.douban{
+	display:inline-block;
+	width:26px;
+	height:18px;
+	vertical-align:middle;
+	background:url(../images/footer/ico_common.png)-224px -5976px no-repeat;
+}
+.renren{
+vertical-align:middle;
+	display:inline-block;
+	width:36px;
+	height:18px;
+	background:url(../images/footer/ico_common.png) -224px -6016px;
+}
+.word{
+	text-align:right;
+	position:relative;
+	right:23px;
+	color:#fff;
+	font-size:14px;
+	padding-top:6px;
+	padding-bottom:23px;
+	padding-right:11px;
+}
+.word span{
+padding-left:5px;
+}
+.say{
+	padding-top:22px;
+	font-size: 18px;
+    color: #fff;
+}
+.copyright{
+height:18px;
+	border-bottom:1px solid #808285;
+	padding-bottom:3px;
+}
+
+.copyright>ul>li{
+	float:left;
+	font-size:12px;
+	color:#808285;
+	margin-right:12px;
+	}
+.copyright>ul>li>a{
+	color:#808285;
+	height:18px;
+	line-height:18px;
+	font-size:12px;
+	text-decoration:none;
+}
+.friend-right>ul>li{
+	float:left;
+	margin-right:23px;
+	font-size:13px;
+	padding-top:3px;
+	color:#808285;
+}
+.friend-right>ul>li>a{
+	color:#808285;
+	font-size:12px;
+}
+.ga{
+	padding:3px;
+	clear:both;
+	position:relative;
+	top:10px;
+	left:249px;
+	font-size:12px;
+}
+.ga>a{
+	color:#808285;
+}
+.ga>a img{
+vertical-align:top;
+	position:middle;
+	top:2px;
+	padding-right:5px;
+
+}
+.shiming{
+	clear:both;
+	position:relative;
+	top:10px;
+	left:307px;
+}
+.footer-right{
+	padding-top:80px;
+	margin-right:63px;
+}

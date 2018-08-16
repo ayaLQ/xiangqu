@@ -1,0 +1,227 @@
+body,ol,ul,li,div,h1,h2,h3,h4,h5,h6,p{
+	padding:0;
+	margin:0;
+}
+body{
+	    background: #f9f9f9;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:400;
+	font-size:100%;
+}
+li,ol,ul{
+	list-style:none;
+}
+a,a:hover{
+	text-decoration:none;
+	color:black;
+}
+img:hover{
+	opacity:0.9;
+}
+.J-mainNaxBox{
+	width:980px;
+	height:60px;
+	margin:0 auto;
+	background:yellow;
+	display:flex;
+	justify-content:space-between;
+}
+#nav{
+	margin:0px;
+	padding:0px;
+	list-style-type:none;
+}
+#nav li{
+	padding:0px 10px 0px 0px;
+	margin:16px 14px 0px 0px;
+	text-decoration:none;
+	float:left;
+}
+#nav li>a{
+	text-decoration:none;
+	padding:0px 4px 3px 4px;
+	
+}
+#nav li:nth-child(3)>a{
+	border-bottom:3px solid black;
+}
+.J-mainSearch input{
+	height:30px;
+	width:340px;
+	padding-left:5px;
+	box-sizing: border-box;
+	color: rgba(0,0,0,0.1);
+	border:1px solid rgba(0,0,0,0.1);
+}
+.search-img{
+	display:inline-block;
+	position:relative;
+	top:11px;
+	width: 43px;
+	height: 30px;
+	background: url(../images/detail/pc_new_icon.png) 0 -40px no-repeat;
+}
+/*设计师头部部分*/
+.designer-header{
+	width: 980px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+    border-top: 1px solid #b2b2b2;
+    overflow: hidden;
+	padding-bottom:0px;
+	margin-bottom:16px;
+	padding-top:0px;
+	margin-top:0px;
+}
+.designer{
+/*	height:29px;*/
+}
+.designer-header>.J_subNavItem>ul li>a{
+	font-size:13px;
+}
+.designer-header>.J_subNavItem #nav li{
+padding-left:0px;
+padding-right:4px;
+margin-left:0;
+margin-right:0;
+position:relative;
+top:-11px;
+}
+.J_subNavItem{
+	display:flex;
+	justify-content:space-between;
+}
+.J_subNavItem>div{
+	font-size:13px;
+	width:74px;
+	position:relative;
+	top:8px;
+}
+/*
+<div class="designer">
+				<div class="designer-brand"><a href=""><img src="" alt=""></a></div>
+				<div class="designer-fans">
+					<p>
+					<a href="">
+						<span class="span-blk span-title">JCOCO女装... </span>
+						<span class="designer-shopinfo">品质与时尚相结合</span>
+					</a>
+					</p>
+					<p><img src="images/detail/FtNqQfnLMdXTYgI2dTnL_SUmICye" alt="">粉丝<span>1166</span></p>
+					<p class="designer-care">关注</p>
+				</div>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+	  </div>
+*/ 
+.designer-content{
+	width:980px;
+	min-height:236px;
+	overflow:hidden;
+	margin:12px auto;
+	
+}
+.designer-content .designer-box{
+	width:980px;
+	display:flex;
+	justify-content:space-between;
+}
+.designer-brand{
+	width:122px;
+	height:236px;
+	
+}
+ .designer-brand a img{
+	width:122px;
+	height:122px;
+/*	position:relative;*/
+/*	top:45px;*/
+	border-radius:50%
+ }
+.designer-fans{
+	
+	width:103px;
+	
+	font-size:14px;
+	white-space:nowrap;
+}
+.designer-fans .designer-shopinfo{
+	display:block;
+	font-size:13px;
+	white-space:nowrap;
+}
+.guanzhu{
+margin:22px 0px;
+padding:0 0 0 3px;
+font-size:13px;
+}
+.guanzhu img{
+	vertical-align:middle;
+	padding-right:5px;
+}
+.guanzhu span{
+	padding-left:2px;
+}
+.designer-box ul{
+	display:flex;
+	justify-content:space-between;
+	position:relative;
+}
+.designer-box>ul li{
+	margin-left:14px;
+	background:pink;
+	width:236px;
+	height:236px;
+	position:relative;
+}
+.designer-box ul li a>img{
+	max-height:236px;
+	max-width:236px;
+	vertical-align:middle;
+	display:inline;
+	
+}
+.designer-box ul li a{
+	width: 236px;
+    height: 236px;
+	display:table-cell;
+	text-align:center;
+	vertical-align:top;
+}
+/*关键词的动态效果*/
+.designer-box ul li p{
+	height:33px;
+	width:236px;
+	overflow:hidden;
+	font-size:14px;
+	line-height:33px;
+	text-align:center;
+	position:absolute;
+	top:203px;
+	left:0px;
+	font-weight:400;
+	color: #676767;
+	overflow:hidden;
+	background:rgba(255,255,255,0.7);
+}
+.designer-box ul li p:hover{
+	color:#fff;
+	background:rgba(0,0,0,0.7);
+}
+.designer-care{
+	width:50px;
+	height:20px;
+	background:#000;
+	color:#d4d4d4;
+	line-height:20px;
+	text-align:center;
+	margin-left:3px;
+}
+
+
+

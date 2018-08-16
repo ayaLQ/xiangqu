@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/header.css">
+  <title>登录</title>
+  <head>
+  <style>
+	  body{
+		  background:url(images/login/brickwall.png);
+	  }
+  .login_wrapper{
+	width:980px;
+	margin:0 auto;
+  }
+ .login-line{
+	  height:0px;
+  }
+	.title-nav{
+		width:980px;
+		height:30px;
+		position:relative;
+/*		left:228px;*/
+		margin-bottom:56px;
+	}
+	.title-pic{
+		width:227px;
+		float:left;
+	}
+	.login-box{
+		width:980px;
+	}
+	.pic{
+		float:left;
+	}
+	.login_content{
+		width:394px;
+		height:490px;
+		float:right;
+		background:rgba(255,255,255,0.4);
+	}
+	.login_content input{
+		border:1px solid #999999;
+		width:378px;
+		height:45px;
+		margin-bottom:10px;
+		line-height:45px;
+		font-size:16px;
+		padding-left:28px;
+		box-sizing:border-box;
+		border-radius:3px;
+		position:relative;
+		left:10px;
+	}
+	
+	.line{
+		border:1px solid gray;
+	}
+	.login-line>span{
+		font-size:12px;
+		color:#999999;
+		display:inline-block;
+		width:108px;
+		background:#fff;
+		position:relative;
+		top:-29px;
+		left:141px;
+		height:15px;
+		line-height:15px;
+		text-align:center;
+	}
+	h4{
+		text-align:center;
+	}
+	  .tishi{
+		  font-size:12px;
+		  float:left;
+		  color:red;
+		  padding-left:12px;
+	  }
+	  .wangji{
+		  float:right;
+		  margin-right:21px;
+		  font-size:12px;
+	  }
+	  .btn{
+		  background:#000;
+		  color:#fff;
+	  }
+	  .name{
+		  height: 61px;
+	  }
+	 .name>img{
+		z-index:12;
+		  position:relative;
+		  top:40px;
+		  left:17px;
+			width:23px;height:28px;display:inline-block;
+	 }
+	  .hidden{
+		  /*height:95px;*/
+		  display:flex;
+		  justify-content:space-between;
+		  position:relative;
+		  top:31px;
+	  		margin-bottom:25px;
+
+	  }
+	  .change_vcode{
+		  position:relative;
+		  left:-21px;
+		  top:17px;
+		  font-size:12px;
+	  }
+	.login_content .hidden input{
+			height:46px;
+			width:190px;
+			padding-left:10px;
+	}
+	.change_img{
+		position:relative;
+		left:-2px;
+		top:3px;
+		height:30px;
+		width:80px;
+	}
+
+	
+  </style>
+  </head>
+  <body class="login">
+  	<div class="login_wrapper">
+		<div class="title-nav">
+			<p class="title-pic">
+				<a href="">
+					<img src="images/login/login_logo.jpg" alt="">
+				</a>
+			</p>
+		</div>
+		<div class="login-box">
+			<div class="pic"><img src="images/login/login_left_pic_03.jpg" alt="" ></div>
+			<section class="login_content">
+				<form action="data/login.php">
+					<h4>账户登录</h4>
+					<div class="login-line">
+						<p class="line"></p>
+						<span>使用想去账号登录</span>
+					</div>
+					<div class="name">
+						<img src="images/login/uname.svg" alt=""  >
+						<input type="text" name="uname" placeholder="请输入用户名"  />
+					</div>
+					<div class="name">
+						<img src="images/login/3.svg" alt="" >
+						<input type="password" name="upwd" class="form-control"   placeholder="请输入密码"  />
+					</div >
+					<div class="hidden" id="vcode">
+					<input type="text"  name="code" placeholder="验证码" />
+						 <img src="data/code.php" class="change_img"> <a href="#" class="change_vcode">看不清换一张</a>
+						
+					</div>
+
+					<div>
+						<span style="display:none" class="tishi">密码不能为空</span>
+						<a href="" class="wangji" >忘记密码</a>
+					</div>
+					<div>
+						<input type="submit" value="登录" class="btn btn-default submit" name="usubmit"  >
+					</div>
+				</form>
+			</section>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/login.js"></script>
+	<script>
+		$(".change_vcode").click(function(e){
+			e.preventDefault();
+			$(".change_img").attr({"src":"data/code.php"})
+			
+		});
+	</script>
+  </body>
+  </html>

@@ -1,0 +1,428 @@
+body,ol,ul,li,div,h1,h2,h3,h4,h5,h6,p{
+	padding:0;
+	margin:0;
+}
+body{
+	    background: #f9f9f9;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:400;
+	font-size:100%;
+}
+li,ol,ul{
+	list-style:none;
+}
+a,a:hover{
+	text-decoration:none;
+	color:black;
+}
+#nav li:nth-child(3)>a{
+	border-bottom:3px solid black;
+}
+/*导航栏搜素图片*/
+/*<div class="J-mainSearch">
+				<input type="text" id="txtSearch" placeholder="请输入您要搜索的内容">
+				<a href="" class="search-img" data-trigger="search">
+					<img src="images/index/pc_new_icon.png" alt="">
+				</a>
+			</div>*/
+
+.J-mainSearch input{
+	height:30px;
+	width:340px;
+	padding-left:5px;
+	box-sizing: border-box;
+	color: rgba(0,0,0,0.1);
+	border:1px solid rgba(0,0,0,0.1);
+}
+.search-img{
+	display:inline-block;
+	position:relative;
+	top:11px;
+	width: 43px;
+	height: 30px;
+	background: url(../images/detail/pc_new_icon.png) 0 -40px no-repeat;
+}
+/*<!-- 商品详情页 -->*/
+/*<section class="J_goods_detail">
+		<div class="dt_header">
+			<div class="dt_author">
+				<a href=""><img src="images/detail/author1-wuji.jpg" alt=""></a>
+				
+			</div>
+			<div class="dt_author_info">
+				<h2><a href="">无极</a></h2>
+				<p><a class="J_bandstory dt-bandstory"  href="">跨出大学校园，会收敛起在寝室凉拖的随性；会为职场难以hold住的高跟鞋而焦头烂额；更会无比不舍白球鞋校服的青葱岁月...无极 是一个和刚步入社会的你们一起成长的90后的故事~</a></p>
+			</div>
+		</div>
+	</section>*/
+.J_goods_detail{
+	margin: 0 auto;
+    padding: 0;
+    width: 980px;
+}
+.dt_header{
+	display:flex;
+	width:980px;
+/*	background:red;*/
+	border-bottom:1px solid #e0e0e0;
+	padding-bottom:30px;
+	padding-top:40px;
+	justify-content:flex-start;
+}
+.dt_header a:hover{
+	text-decoration:underline;
+}
+.dt_author{
+	padding:0px 0 0;
+	margin:0 17px 0 0;
+/*	background:pink;*/
+}
+
+.dt_author>a>img{
+	width:50px;
+	height:50px;
+	}
+.dt_author_info{
+/*	color:#666;*/
+	font-size:18px;
+}
+.dt_author_info>p>a{
+	font-size:12px;
+	color:#666;
+}
+/*<div class="detail-cont">
+			<!--图片部分 			 -->
+			<div class="detail-pic-box">
+				<div class="detail-mainpic"></div>
+				<div class="like-common">
+					<a class="like" href=""></a>
+					<div class="like-num">
+						<span id="J_scroll">0</span>
+					</div>
+				</div>
+			</div>*/
+.detail-cont{
+	padding:30px 0 30px 0;
+	display:flex;
+}
+.detail-pic-box{
+/*	float:left;*/
+	position:relative;
+	width:606px;
+	max-height:606px;
+	overflow:hidden;
+	padding:0 18px 0 3px;
+}
+.like-common{
+	background:rgba(255,255,255,.4);
+	width:121px;
+	height:53px;
+	position:absolute;
+	top:12px;
+	right:45px;
+	border-radius:30px;
+	overflow:hidden;
+}
+.like-common>a span{
+	display:inline-block;
+	width:34px;
+	height:34px;
+	background:url(../images/detail/like.png) -9px -56px no-repeat;
+/*	padding:10px 0px 0px 23px;*/
+	margin:10px 10px 5px 27px;
+	position:relative;
+	top:-19px;
+}
+.like-num{
+	display:inline-block;
+	position:relative;
+	top:17px;
+	left:-7px;
+	overflow:hidden;
+/*	height:23px;*/
+}
+.like-num>div{
+	height:34px;
+}
+/*<!--购物车文字信息等 			 -->
+			<div class="detail-info">
+				<h2 class="product-name">秋冬情侣卫衣</h2>
+				<ul class="detail-brand">
+					<li class="brand-name">设计师<span>lover</span></li>
+					<li class="brand-time">品牌<span>无极</span></li>
+				</ul>
+				</ul>
+				<div class="des"></div>
+			</div>*/
+.detail-info{
+	float:left;
+	width:340px;
+	overflow:hidden;
+/*	background:pink;*/
+	margin-left:12px;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+}
+.detail-info .product-name{
+	font-size:18px;
+	font-weight:400;
+	margin-bottom:12px;
+}
+.detail-info .detail-brand{
+	font-size:18px;
+	font-weight:400;
+}
+.detail-brand .brand-name,.brand-time{
+	padding:0px 12px 12px 0px;
+	font-weight:400;
+	font-size:16px;
+}
+.detail-brand .brand-name>span{
+	padding:0px 0px 0px 41px;
+	font-weight:400;
+
+}
+.brand-time>span{
+	padding:0px 0px 0px 53px;
+	font-weight:400;
+}
+/*<!--规格：尺码 数量 div class="spec"-->
+				<div class="spec">
+					<p>尺码</p>
+						<a href="#" class="active">M</a>*/
+.detail-info .spec{
+/*	display:flex;*/
+}
+.detail-info .spec p,.detail-info .count p{
+	font-size: 16px;
+	font:"microsoft yahei";
+    padding-bottom: 12px;
+}
+.detail-info .spec a{
+	
+	min-width:28px;
+	display:inline-block;
+	text-align:center;
+    color: #2e2e2e;
+	padding: 6px;
+    margin: 0 4px 14px 0;
+	border:1px solid #999999;
+	
+}
+/*<!--数量-->
+				<div class="count">
+					<p>数量</p>
+					<button>-</button>
+					<input type="text" value="1">
+					<button>+</button>
+					<span>库存span;147件</span>
+				</div>*/
+.detail-info .count div{
+	width:139px;
+	font-size: 20px;
+    font-weight: 700;
+    font-family: Tahoma,Verdana,"\5FAE\8F6F\96C5\9ED1";
+	border:1px solid #000;
+	padding:0;
+}
+.detail-info .count input,.detail-info .count button{
+	height: 29px;
+/*	box-sizing:border-box;*/
+	border:none;
+	font-size: 19px;
+    font-weight: 700;
+    font-family: Tahoma,Verdana,"\5FAE\8F6F\96C5\9ED1";
+	background:#F9F9F9;
+	text-align:center;
+	margin:0px;
+}
+.detail-info .count button{
+	padding:0;
+	width:40px;
+}
+.detail-info .count .reduce{
+	border-right:1px solid #a2a2a2;
+}
+.detail-info .count .add{
+	border-left:1px solid #a2a2a2;
+}
+
+.detail-info .count input{
+	margin:0px;
+	box-sizing:border-box;
+	height: 29px;
+    width: 47px;
+	padding: 0 15px;
+	
+}
+.detail-info .count span{
+		float:left;
+	    line-height:30px;
+		color: #a9a9a9;
+		font-size: 12px;
+		position:relative;
+		top:29px;
+		left:83px;
+}
+/*<!--邮费-->
+				<p class="price">￥350.00</p>*/
+.price{
+	font-size:20px;
+	font-weight:700;
+	height:12px;
+	margin-bottom:12px;
+}
+/*<!--邮费-->
+				<p class="postage">
+					<span>邮费：</span>
+					<span>5</span>
+					<span>元</span>
+					<a href="">
+						<span>联系卖家</span>
+						<img src="images/detail/kefuf.gif" alt="">
+					</a>
+
+				</p>*/
+.postage{
+/*margin:28px 0 28px 0px;*/
+}
+.postage span{
+	font-size:14px;
+}
+.postage a{
+	display:inline-block;
+	margin-left:54px;
+}
+/*<!--购物车-->
+				<div class="shops">
+					<a href="">立即购买</a>
+					<a href="">
+						<img src="" alt="">
+						<span>加入购物车</span>
+
+					</a>*/
+.shops{
+	margin:28px 0 28px 0px;
+}
+.shops>a{
+	height: 48px;
+    line-height: 48px;
+	width:158px;
+	display: inline-block;
+    font-size: 20px;
+    border: 2px solid #000;
+    text-align: center;
+}
+.shops a:nth-child(1){
+	color: #fff;
+	background-color: #000;
+}
+.shops a:nth-child(2){
+	color: #000;
+	background-color: #fff;
+}
+/*<!--商家承若-->
+				<div class="promise">
+					<img src="images/detail/web_7.png" alt="">
+					<span>七天无理由退货</span>
+					<img src="images/detail/web_48h.png" alt="">
+					<span>48小时发货</span>
+					<img src="web_xiangqu.png" alt="">
+					<span>担保交易</span>
+				</div>*/
+.promise img{
+	height: 24px;
+    width: 24px;
+    padding-right: 4px;
+}
+.promise span{
+    padding-right: 10px;
+	margin-left:-6px;
+    font-size: 12px;
+    color: #2e2e2e;
+	position:relative;
+	top:-8px;
+}
+
+/*<div class="weixin">
+					<img src="" alt="">
+					<span>
+						加想去君微信：xzsn2626，成为本君好友，超多朋友福利，带你认识更多设计师哦～
+					</span>
+				</div>*/
+.weixin{
+	background: #FFF;
+    border: 1px solid #ebebeb;
+    margin-top: 20px;
+    height: 88px;
+}
+.weixin img{
+    float: left;
+    padding: 9px;
+    width: 70px;
+    height: 70px;
+    vertical-align: middle;
+}
+.weixin span{
+	color:#a9a9a9;
+	font-size:14px;
+	position:relative;
+	top:12px;
+}
+/*为你推荐
+<div class="recommend">
+			<p><span>同</span>类推荐</p>
+			
+			<div class="good-recommand-item">
+			<div class="picBox">
+				<ul>
+					<li><a href=""><img */
+.recommend{
+	
+	background: #FFF;
+    padding: 20px;
+    border: 1px solid #ebebeb;
+    margin-bottom: 30px;
+}
+.recommend p{
+	font-size:15px;
+	margin-left:17px;
+}
+.recommend p span{
+	border-bottom:2px solid #000;
+	padding-bottom:2px;
+
+}
+.picBox ul{
+	width:980px;
+	display:flex;
+	justify-content:space-between;
+}
+.picBox ul li{
+	float:left;
+	margin-left: 16px;
+    width: 140px;
+    height: 140px;
+    overflow: hidden;
+    background: #fff;
+}
+.picBox{	
+	margin-top:34px;
+	width:1980px;
+	height:140px;
+}
+.picBox{
+		
+		margin:0 auto;
+   }
+   .good-recommand-item{
+		width:936px;
+		overflow:hidden;
+		margin:21px auto;
+
+   }
+	.picBox ul{
+		float:left;
+	}

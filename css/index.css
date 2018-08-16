@@ -1,0 +1,1238 @@
+
+	/*<div id="J_topBanner">
+		<div class="switch-banner-box">
+			<!-- 1、图片区域 -->
+			<ul class="banner-img">
+				<li>
+					<a href="#">
+						<img src="images/index/lun1.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/index/lun2.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/index/lun3.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/index/lun4.png">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="images/index/lun5.png">
+					</a>
+				</li>
+			</ul>
+			<!-- 2、左右方向按钮 -->
+			<a href="#" class="ck-slide ck-left"></a>
+			<a href="#" class="ck-slide ck-right"></a>
+			<!-- 3、导航小圆点 -->
+			<div class="J-navNum">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+	</div>*/
+
+body,ul,li,div,ol,h1,h2,h3,h4,h5,h6,p,pre,td,textarea,th,dl,dt{
+	margin:0px;
+	padding:0px;
+}
+h1, h2, h3, h4, h5, h6, strong {
+    font-weight: 400;
+    font-size: 100%;
+}
+li, ol, ul {
+    list-style: none;
+}
+i,em{
+	font-style:nomarl;
+}
+a, a:hover, body {
+    color: #000;
+	text-decoration:none;
+}
+a{
+	cursor:pointer;
+}
+
+
+
+
+#nav li:nth-child(1)>a{
+	border-bottom:3px solid black;
+}
+
+
+
+
+#J_topBanner{
+	height:360px;
+	background:#dadada;
+}
+.switch-banner-box{
+	width:980px;
+	height:360px;
+	margin:0 auto;
+	background:#791a35;
+	position:relative;
+}
+.banner-left{
+	width:770px;
+	height:358px;
+	overflow:hidden;
+	float:left;
+}
+.banner-right{
+	float:right;
+}
+.banner-img{
+	width:4620px;
+	position:relative;
+}
+.banner-img li{
+	list-style-type:none;
+	float:left;
+}
+.banner-img img:hover{
+	opacity:1;
+}
+#J_topBanner .ck-slide {
+	width:46px;
+	height:46px;
+	position:absolute;
+}
+.ck-left{
+	background:url(../images/index/btn_prev.svg);
+	left:318px;
+	top:270px;
+	opacity:0;
+}
+.ck-right{
+	background:url(../images/index/btn_next.svg);
+	left:422px;
+	top:270px;
+	transform:rotate(180deg);
+	opacity:0;
+}
+.J-navNum{
+	width:770px;
+	height:2px;
+/*	background:pink;*/
+	float:left;
+	z-index:6px;
+}
+.J-navNum span{
+	width:154px;
+	height:2px;
+	background:#ddd;
+	float:left;
+	
+}
+.J-navNum .active{
+	background:#707070;
+}
+/*<!--设计师品牌 --> 
+		<div id=designer-box clearfix>
+			<div class="title-box">
+				<h2 class="item-title f1">设计师品牌</h2>
+				<h3 class="title-des f1">好的设计需要时间和匠心去打磨，贴合着设计师的手掌和心室使物品获得了温度。</h3>
+			</div>
+		</div>
+		<div class="cont-box">
+			<div class="title-box">
+			<ul designer-product-item>
+		</div>
+		</div>
+*/
+.clearfix{
+	width:980px;
+	margin:0 auto;
+	padding-top:35px;
+	/*background:black;*/
+}
+.f1{
+	display:inline;
+}
+.title-box{
+	padding-bottom:20px;
+	height:23px;
+}
+.item-title{
+    border-left: 10px solid #000;
+    font-weight: bold;
+    font-size: 19px;
+	line-height:25px;
+    padding-left: 12px;
+}
+.title-des{
+	padding-left:20px;
+	color:#cacaca;
+	font-weight:400;
+	font-size:12px;
+	display: inline-block;
+}
+.designer-product-item>li{
+	list-style-type:none;
+	margin:22px 11px 0px 15px;
+	width:168px;
+	float:left;
+/*	background: #f6f6f6;*/
+}
+.dg-pic{
+	margin:0px 0px 15px 0px;
+	width:168px;
+	height:166px;
+	display:table-cell;
+	padding-bottom:15px;
+	vertical-align:middle;
+}
+.dg-title{
+	width:168px;
+	height:29px;
+	display:block;
+	line-height:29px;
+	text-align:center;	
+	border-top:1px solid #ccc;
+	box-shadow:inset 0 1px 0 rgba(181,178,178,.2);
+	font-size:14px;
+	background: #f6f6f6;
+}
+.dg-title a{
+	color:#484848;
+	font-size:14px;
+	font-weight: 700;
+	text-decoration:none;
+}
+/*.dg-title:hover{
+	background:gray;
+	text-decoration:underline;
+}*/
+.other{
+    background: 0 0;
+    height: 190px;
+    border: none;
+    padding-top: 15px;
+	text-content:
+}
+.other a{
+    width: 150px;
+    height: 150px;
+	border-radius:50%;
+    border: 3px solid #000;	
+    font-size:20px;
+    color: #000;
+    padding: 0;
+    text-align: center;	
+	text-decoration:none;
+}
+.other a:hover{
+	 color: #fff;
+	 background:#000;
+}
+
+/*第二部分<!--手工艺人 --> */
+.handcraft-product-item{
+	width:1009px;
+	
+}
+.handcraft-product-item>li{
+	list-style-type:none;
+	margin:0px 25px 39px 6px;
+	width:221px;
+	float:left;
+	background: #f6f6f6;
+	position:relative;
+}
+.hc-pic{
+	margin:0px 0px 15px 0px;
+	width:221px;
+	height:221px;
+	display:table-cell;
+	vertical-align:middle;
+	    text-align: center;
+	border-bottom:1px solid #ccc;
+}
+.hc-title{
+	width:209px;
+	height:40px;
+	display:block;
+	line-height:26px;
+	margin-top:0px;	
+	padding-left:12px;
+	box-shadow:inset 0 1px 0 rgba(181,178,178,.2);
+	font-size:14px;
+	font-weight:700;
+	
+}
+.hc-title a{
+	color:#484848;
+	font-size:14px;
+	font-weight: 700;
+	text-decoration:none;
+	height:26px;
+}
+.hc-title span{
+	position:relative;
+	top:-8px;
+}
+.concern{
+	display:block;
+	color: #9a9a9a;
+	
+}
+ .concern em{
+	 padding-right: 10px;
+	 line-height:18px;	
+	font-style: normal;
+}  
+/*<div class="handcraft-icon">
+	<img src="images/index/handcraft-box/handcraft-box1-1.jpg">
+</div>*/
+.handcraft-icon img{
+	position:absolute;
+	top:-11px;
+	left:10px;
+	width:38px;
+	height:38px;
+	border-radius:50%;
+	box-shadow: 1px 1px 1px #999;
+	display:none;
+}
+.handcraft-product-item .other a{
+    width: 156px;
+    height: 156px;
+	border-radius:50%;
+    border: 3px solid #000;	
+    font-size:20px;
+    padding: 0;
+    text-align: center;	
+	text-decoration:none;
+	position:relative;
+	left:40px;
+	top:26px;
+}
+/*精选商品*/
+.J_onlineShare{
+	padding-top:0px;
+}
+.online-share {
+    width: 980px;
+    margin: 0 auto;
+    padding-bottom: 35px;
+    height: 428px;
+    overflow: hidden;
+}
+.online-share .share-total {
+    display: block;
+    width: 80px;
+    height: 94px;
+    float: left;
+    padding: 8px 9px;
+    text-decoration: none;
+    border: 1px solid #deded1;
+    background: #f6f6f6;
+}
+.online-share .share-total .number {
+    height: 72px;
+   
+}
+.online-share .share-total .number p {
+    font-size: 12px;
+    color: #939393;
+    line-height: 20px;
+}
+.online-share .share-total .number .num em {
+    display: inline-block;
+    width: 57px;
+    text-align: center;
+    font-size: 28px;
+    transition: all .5s ease-in-out;
+	font-style:normal;
+}
+.online-share .share-total em:hover{
+	color:#62BBC4;	
+}
+.online-share .share-total .number .num {
+    margin-top: 7px;
+    color: #232323;
+}
+.online-share .share-total .number .num span {
+    font-size: 14px;
+    float: right;
+    position: relative;
+    top: 5px;
+}
+
+.online-share .share-total .view-all {
+    font-size: 15px;
+    color: #232323;
+}
+.online-share .share-right {
+    width: 870px;
+    height: 100px;
+    margin-left: 10px;
+    float: left;
+}
+.online-share .share-right .share-top .bg {
+    height: 5px;
+    margin-top: 3px;
+    background: #232323;
+}
+.online-share .share-right .share-top .bf {
+    width: 351px;
+    letter-spacing: .352em;
+    height: 19px;
+    padding: 0 8px 0 15px;
+    background: #fff;
+    font-size: 12px;
+    color: #666;
+    position: relative;
+    left: 20px;
+    top: -11px;
+}
+/* 女人广场，男人广场，生活家广场，独立设计师作品，手工作坊*/
+.online-share .share-right {
+    width: 870px;
+    height: 100px;
+    margin-left: 10px;
+    float: left;
+}
+.online-share .share-right ul li {
+    width: 88px;
+    height: 42px;
+    display: inline-block;
+    margin: 10px 0;
+    padding-right: 4px;
+    float: left;
+    text-align: center;
+    font-size: 14px;
+    color: #232323;
+	padding-top:20px;
+}
+.online-share .share-right ul li a {
+    display: inline-block;
+/*    width: 70px;*/
+	width: 80px;
+    height: 80px;
+	border-radius: 50%;
+    position: relative;
+	top: -35px;
+    left: -3px;
+    text-decoration: none;
+	color:#000;
+	background:#fff;
+	vertical-align:middle;
+/*	padding-top:20px;*/
+}
+/*active事件*/
+.online-share .share-right ul .active>a{
+	background: #000;
+   color: #fff;
+}
+.online-share .share-right ul li a span{
+	position:relative;
+	top:22px;
+}
+.online-share .share-right ul .i{
+    width: 58px;
+    height: 58px;
+    display: inline-block;
+    position: relative;
+    left: 1px;
+    float: left;
+	background:url(../images/index/onlineShare/homev1_icos.png) 12px -230px no-repeat;
+}
+.online-share .share-right ul li a:hover{
+   background: #000;
+   color: #fff;
+    
+/*    border-radius: 50%;*/
+/*	position: relative;*/
+/*    left: 0;*/
+/*    top: -22px;*/
+/*    float: left;*/
+	
+}
+.online-share .share-right ul li .shareHover:hover{
+	opacity:1;
+	
+}
+.online-share .share-right ul li.active{
+	color:#fff;
+	
+}
+/*精选商品的具体内容<div class="share-bottom"></div>*/
+.online-share .share-bottom {
+    clear: both;
+    height: 36px;
+    background: #EFEFEF;
+}
+.online-share .share-bottom .line {
+    width: 980px;
+    height: 2px;
+    background: #000;
+}
+
+
+
+.online-share .share-bottom i {
+    width: 16px;
+    height: 15px;
+    line-height: 15px;
+    position: relative;
+    top: -10px;
+    left: 145px;
+    float: left;
+    margin-right: 137px;
+    overflow: hidden;
+    display: inline-block;
+    background: url(../images/index/smallIcon.png) no-repeat;
+}
+.online-share .share-bottom .chatMiddle {
+    background-position: 0 -250px;
+    margin-top: 2px;
+}
+/*当选中对应分类时，粉色小圆点的对应样式class=chatMiddleH*/
+.online-share .share-bottom .chatMiddleH {
+    background-position: 0 -316px;
+    margin-top: 2px;
+}
+.clear{
+    clear: both;
+    height: 0;
+    font-size: 0;
+    overflow: hidden;
+}
+
+.online-share .share-bottom .date {
+    background: url(../images/index/homev2_icos.png) 0 -202px no-repeat;
+    color: #fff;
+    padding-left: 3px;
+    width: 112px;
+    padding-top: 4px;
+    height: 23px;
+    float: left;
+    margin-top: 10px;
+    position: relative;
+    top: -20px;
+}
+.online-share .share-bottom .date span {
+	display:inline-block;
+    margin: 0px 0 0 10px;
+	font-size: 13px;
+}
+
+.online-share .share-bottom ul li {
+    font-size: 12px;
+    color: #cc9e96;
+    text-align: center;
+    width: 98px;
+    float: left;
+    margin-top: -2px;
+    display: inline;
+}
+.online-share .share-bottom ul li.li2,li.li3,li.li4,li.li5,li.li6 {
+	margin-left:52px;
+}
+
+/*<div class="J_onlineShareCont share-content">*/
+.online-share .share-content {
+    padding: 20px;
+    border: 1px solid #E2E2E2;
+    border-bottom: 2px solid #E6E7E8;
+    background: rgba(255,255,255,.7);
+    height: 239px;
+}
+/*没被选中的分类隐藏*/
+.online-share .share-content ul li {   
+    display: none;
+}
+/*选中的分类显示*/
+.online-share .share-content ul li.active{   
+    display: block;
+}
+.online-share .left-wrap {
+    float: left;
+    width: 968px;
+    padding: 20px 0 0 10px;
+    margin-top: -24px;
+    overflow: hidden;
+}
+.online-share .share-content .nav_woman .left-wrap .hot_none {
+    height: 100px;
+	width: 235px;
+    overflow: hidden;
+	padding: 10px 40px 0;
+}
+.online-share .left-wrap .hot_none {
+    padding: 10px 40px 0;
+}
+.online-share .left-wrap .hot {
+    width: 235px;
+    height: 119px;
+}
+.online-share .left-wrap .list {
+    float: left;
+    width: 223px;
+    height: 127px;
+    padding: 8px 38px 0 47px;
+
+}
+.online-share .left-wrap .hot h2 {
+    font-size: 14px;
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    margin-left: 6px;
+}
+.online-share .left-wrap .hot a:hover{
+		    background: #e0e0e0;
+    border: 1px solid #fff;
+}
+.online-share .left-wrap .hot a {
+    float: left;
+    height: 20px;
+    line-height: 20px; 
+    border: 1px solid #e6e6e6;
+    padding: 0 10px;
+    margin: 0 10px 12px 0;
+    white-space: nowrap;
+    color: #888;
+    text-decoration: none;
+	border-radius: 30px;
+   font-size:12px;
+}
+.online-share .left-wrap .list .list_top {
+    width: 194px;
+    background: url(../images/index/onlineShare/dot1.png) 0 bottom repeat-x;
+    height: 27px;
+}
+
+.online-share .left-wrap i {
+    background: url(../images/index/onlineShare/nav_ico.png) no-repeat;
+    float: left;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.online-share .left-wrap .list .list_top a {
+    padding: 2px 7px;
+}
+
+.online-share .left-wrap .list .list_title {
+    font-size: 14px;
+    margin-left: 5px;
+}
+.online-share .left-wrap .list ul {
+    width: 209px;
+    padding-top: 10px;
+    margin-top: -5px;
+    float: left;
+    margin-left: -7px;
+}
+.online-share .left-wrap .list ul li {
+    float: left;
+    height: 20px;
+    line-height: 20px;
+    display: inline;
+    overflow: hidden; 
+    margin-right: 2px;
+    margin-bottom: 7px;
+
+}
+
+.online-share .left-wrap .list ul li>a{
+	float: left;
+    color: #777;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid transparent;
+    padding: 0 5px;
+    white-space: nowrap;
+    border-radius: 30px;
+    font-size: 12px;
+	color: #888;
+}
+.online-share .left-wrap .list ul li>a:hover{
+	border:1px solid #cc9e96;
+	border-radius: 30px;
+}
+/*女人图片*/
+.online-share .left-wrap i.cloth_woman {
+    background-position: 0 -104px;
+}
+.online-share .left-wrap i.skirt_woman {
+    background-position: 0 -229px;
+}
+.online-share .left-wrap i.bag_woman {
+    background-position: 0 -35px;
+}
+.online-share .left-wrap i.shoe_woman {
+    background-position: 0 -352px;
+}
+.online-share .left-wrap i.demond_woman {
+    background-position: 0 -200px;
+}
+/*男人图标*/
+.online-share .left-wrap i.cloth_man {
+    background-position: 0 -134px;
+	margin-top:-2px;
+}
+.online-share .left-wrap i.pants_man {
+    background-position: 0 -259px;
+	margin-top:-4px;
+}
+.online-share .left-wrap i.bag_man {
+    background-position: 0 0px;
+	margin-top:-4px;
+}
+.online-share .left-wrap i.shoe_man {
+	    height: 15px;
+    width: 33px;
+    background-position: 0 -328px;
+	margin-top:4px;
+}
+.online-share .left-wrap i.demond_man {
+    background-position: 0 -420px;
+}
+/*生活家广场*/
+.online-share .share-content .nav_life .left-wrap .hot_none {
+	height:230px;	
+}
+.online-share .left-wrap i.chair {
+    background-position: 0 -67px;
+
+}
+.online-share .left-wrap i.pillow {
+    background-position: 0 -297px;
+	
+}
+.online-share .left-wrap i.usb {
+    background-position: 0 -3820px;
+	position:relative;
+	bottom:5px;
+}
+.online-share .left-wrap i.doll {
+	   
+    background-position: 0 -169px;
+
+}
+/*手工作坊*/
+.online-share .share-content .nav_shouzuo .left-wrap .hot_hand {
+    width: 174px;
+	padding: 8px 35px 0 44px;
+}
+.online-share .nav_shouzuo .left-wrap .list_hand {
+    width: 130px;
+    margin-right: 10px;
+}
+.online-share .nav_shouzuo .left-wrap i.hat_hand {
+    background-position: 0 -650px;
+}
+.online-share .left-wrap i.bag_hand {
+    background-position: 0 -680px;
+    position: relative;
+    bottom: 2px;
+}
+.online-share .left-wrap i.shoe_hand {
+    background-position: 0 -717px;
+}
+.online-share .left-wrap i.sweater_hand {
+    background-position: 0 -790px;
+    position: relative;
+    bottom: 2px;
+}
+.online-share .left-wrap i.art_hand {
+    background-position: 0 -750px;
+    position: relative;
+    bottom: 7px;
+}
+.online-share .left-wrap i.office_hand {
+    background-position: 0 -826px;
+    position: relative;
+    bottom: 2px;
+}
+.online-share .left-wrap i.sheep_hand {
+    background-position: 0 -861px;
+    width: 39px;
+    position: relative;
+    bottom: 2px;
+}
+/*独立设计师*/
+.online-share .designer_item .hot{ 
+	position:relative;
+	top:-17px;
+	width:228px;
+}
+
+
+
+/*vintage小铺*/
+.online-share .share-content .nav_vingtage .left-wrap .hot {
+    height: 240px;
+	width: 144px;
+}
+
+.online-share .left-wrap .list_vingtage {
+    width: 140px;
+    margin-right: 10px;
+}
+.online-share .left-wrap i.cloth_vingtage {
+    background-position: 0 -455px;
+    position: relative;
+    bottom: 3px;
+}
+.online-share .left-wrap i.acc_vingtage {
+    background-position: 0 -485px;
+}
+.online-share .left-wrap i.bag_vingtage {
+    background-position: 0 -516px;
+}
+.online-share .left-wrap i.shoe_vingtage {
+    background-position: 0 -550px;
+}
+.online-share .left-wrap i.furniture_vingtage {
+    background-position: 0 -584px;
+    position: relative;
+    bottom: 2px;
+}
+.online-share .left-wrap i.toy_vingtage {
+    background-position: 0 -620px;
+}
+/*<div class="like-box clearfix">	
+		<!--标题：猜你喜欢-->
+		<div class="title-box">
+			<div class="title-box">
+				<span class="item-title f1">猜你喜欢</span>
+			</div>
+		</div>
+		<!--图片轮播区域 -->
+		<div class="like-random-item">	
+		    <ul>
+				<li><a href=""><img src="" alt=""></a></li>
+				<li><a href=""><img src="" alt=""></a></li>
+				<li><a href=""><img src="" alt=""></a></li>
+				<li><a href=""><img src="" alt=""></a></li>
+				<li><a href=""><img src="" alt=""></a></li>
+				<li><a href=""><img src="" alt=""></a></li>
+			</ul>
+		</div>
+</div>*/
+.like-box{
+    width: 980px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+.like-box .like-random-item{
+	height:130px;
+}
+
+
+/*好物推荐.lunbo内容
+<div class="good-recommand">
+				<!--轮播图片-->
+		<div class="good-recommand-item">
+			<div class="picBox">
+				<ul>
+					<li><a href="">src="images/index/handcraft-box/handcraft-box2.jpg</a>
+					<p>设计师</p>
+					</li>*/
+
+.good-recommand-item{
+	width:980px;
+	margin:0 auto;
+	 position:relative;
+}
+.good-recommand{
+	width:980px;
+	margin:0 auto;
+}
+.good-recommand .picBox{
+	width:980px;
+	height:483px;
+	margin-bottom:38px;
+	overflow: hidden;
+	 position:relative;
+
+}
+.good-recommand ul{
+	width: 1500px;
+    height: 483px;
+    display:flex;
+	padding:0 5px;
+	position:absolute;
+	flex-wrap:wrap;
+	justify-content:space-between;
+/*    overflow: hidden;*/
+	
+}
+.good-recommand ul li{
+	width: 236px;
+    height: 236px;
+    display: list-item;
+/*    float: left;*/
+    margin: 0 13px 13px 0;
+    overflow: hidden;
+    position: relative;
+	
+}
+.good-recommand ul li a>img{
+	max-height:236px;
+	max-width:236px;
+	vertical-align:middle;
+	display:inline;
+}
+.good-recommand ul li a{
+	width: 236px;
+    height: 236px;
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+/*关键词的动态效果*/
+.good-recommand ul li p{
+	height:33px;
+	width:236px;
+	overflow:hidden;
+	font-size:14px;
+	line-height:33px;
+	text-align:center;
+	position:absolute;
+	top:203px;
+	left:0px;
+	font-weight:400;
+	color: #676767;
+	overflow:hidden;
+	background:rgba(255,255,255,0.7);
+}
+.good-recommand ul li p:hover{
+	color:#fff;
+	background:rgba(0,0,0,0.7);
+}
+/*好物推荐上下键按钮
+	<div class="pre">></div>
+	<div class="next"><</div>*/
+
+.good-recommand .pre{
+	z-index:16;
+	width:60px;
+	height:60px;
+	font-size:23px;
+	font-weight:700;
+	position:absolute;
+	top:0px;
+	left:0px;
+	background:url(../images/index/home_widget.png)2px -159px no-repeat;
+}
+.good-recommand .next{
+	width:60px;
+	height:60px;
+	font-size:23px;
+	font-weight:700;
+	position:absolute;
+	z-index:16;
+	top:0px;
+	left:1027px;
+	background:url(../images/index/home_widget.png)-94px -159px no-repeat;
+}
+/*	<!--标题：猜你喜欢-->
+		<div class="like-box clearfix">
+		<div class="title-box">
+			<div class="title-box">
+				<span class="item-title f1">猜你喜欢</span>
+			</div>
+		</div>
+		<!--图片轮播区域 -->
+		<div class="like-random-item">	
+		    <ul>
+				<li><a href=""><img src="" alt=""></a><div></div></li>
+				<li><a href=""><img src="" alt=""></a></li>
+				<li><a href=""><img src="" alt=""></a></li>
+				<li><a href=""><img src="" alt=""></a></li>
+				<li><a href=""><img src="" alt=""></a></li>
+				<li><a href=""><img src="" alt=""></a></li>
+			</ul>
+		</div>
+</div>*/
+.like-box{
+    width: 980px;
+    margin: 0 auto;
+    padding-top:5px;
+}
+.like-box .title-box>span{
+	    font-size: 15px;
+		font-weight:700;
+}
+
+.like-box  ul{
+	padding:0 3px 0 3px;
+	position:relative;
+
+}
+.like-box  ul li {
+	margin-bottom:30px;
+	float:left;
+	margin-left:9px;
+	overflow:hidden;
+	text-align:center;
+	position:relative;
+/*	width:130px;*/
+/*	height:130px;*/
+display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+.like-box ul li a{
+	    display: table-cell;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+    vertical-align: middle;
+}
+.like-box ul li a>img{
+	max-width:130px;
+	max-height:130px;
+	vertical-align:middle;
+	display:table-cell;
+	text-align:center;
+	vertical-align:middle;
+}
+img:hover{
+	opacity:0.9;
+}
+.good-recommand-item .btn{
+	width: 1066px;
+    height: 0px;
+	background:yellow;
+    position: absolute;
+    top: 214px;
+    left: -35px;
+}
+.good-recommand-item .btn .disabled{
+/*	color:#bfbfbf;*/
+/*    background:#f2f2f2;*/
+/*	background:url(../images/index/home_widget.png)2px -159px no-repeat;*/
+}
+.lift{
+	background:#eee;
+	position:fixed;
+	top:230px;
+	left:23px;
+	display:none;
+	width:40px;  
+}
+.lift .lift-list{ 
+	display:block;
+	width:38px;
+	border:1px solid #000;
+}
+.lift .lift-list li{
+	color:pink;
+	border:1px solid #000;
+	display:block;
+
+}
+.lift-item:hover, .lift-item-on{
+    position: relative;
+    border-bottom: 1px solid #d70b1c;
+    margin-bottom: -1px;
+    border-color: #d70b1c;
+    background: red;
+}
+
+
+
+/*大家喜欢people-like*/
+.people_like{
+	margin-top:10px;
+}
+ .pic_box .clearAfter:after{
+		content:"";
+		display:block;
+		clear:both;
+   }
+   .people_like{
+		width:980px;
+		margin:0 auto;
+		position:relative;
+		margin-top:27px;
+		overflow:hidden;
+   }
+  .box-left{
+		width:980px;
+		position:relative;
+   }
+    .pic_box{
+		width:850px;
+		position:relative;
+	
+   }
+  .avart{
+		display:inline-block;
+		height:150px;
+   }
+ .pic_box .child3{
+		list-style-type:none;
+		margin:0px;
+		height:430px;
+		padding:0px;
+		width:2980px;
+		position:relative;
+		float:left;
+   }
+
+.pic_box .child3>li,.pic_box .child4>li{
+		float:left;
+		margin-right:20px;
+		position:relative;
+		text-align:center;
+	}
+.pic_content a{
+		overflow:hidden;
+		float:left;
+	}
+ .peopleW140{
+		width:110px;
+		margin:0 auto;
+		text-align:center;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+	}
+ .peopleW420{
+		width:332px;
+	}
+ .peopleW280{
+		width:220px;
+	}
+.pic_content .people-left a{
+		width:220px;
+		height:228px;
+	}
+ .pic_content .people-right a{
+		width:110px;
+		height:114px;
+	}
+ .peopleW280 .people-right{
+		width:110px;
+		float:left;
+	}
+	
+ .avart-pic{
+		width:54px;
+		height:54px;
+		margin:0 auto;
+		
+	}
+ .avart-pic>img{
+		width:54px;
+		height:54px;
+		border-radius:50%;
+	}
+ .username span{
+		height:22px;
+		border-radius:5px;
+		background-color: #DEBCA4;
+		
+	}
+ .username{
+		width:150px;
+		text-align:center;
+		margin:5px auto;
+	}
+	.people_like .like{
+		font-size:12px;
+		margin:0 auto;
+		width:150px;
+		text-align:center;
+	}
+	.people_like .like-star{
+	    display: inline-block;
+		width: 20px;
+		height: 20px;
+		margin: 0px -9px 0px 3px;
+		background: url(../images/index/uc.png) -153px -58px;
+		
+	}
+	.people_like .gun{
+		width:980px;
+		height:54px;
+		margin:0 auto;
+		position:absolute;
+		line-height:54px;
+	}
+	.people_like .gun p{
+		display:inline-block;
+		width:30px;
+		height:54px;
+		line-height:44px;
+		position:absolute;
+		z-index:32;
+	}
+	.people_like .box-left .gun .p1{
+		left:13px;
+	}
+	.people_like .line{
+		display: inline-block;
+		width:765px;
+		height:44px;
+		margin-top:23px;
+		background: url(../images/index/pink_dotted.png) repeat-x;
+		
+	}
+	.people_like .next-direction,.pre-direction{
+		display: inline-block;
+		height: 54px;
+		position:absolute;
+		z-index:32;
+		background-color:#fff;
+	}
+	.people_like .gun .next-direction{
+		width: 45px;
+		left: 935px;
+		top: 0px;
+		background: url(../images/index/peopleLike.png) 12px -40px;
+		background-color:#fff;
+	}
+	.people_like .gun .pre-direction{
+		width: 15px;
+		top: -13px;
+		position: relative;
+		left: 0px;
+		
+		background-color:#fff;
+
+	}
+	.people_like .pre-radius,.next-radius{
+		width: 22px;
+		height: 22px;
+		border: 3px solid #DEBCA4;
+		border-radius: 70px;
+		float:left;
+/*		box-sizing:border-box;*/
+		position:absolute;
+		top:20px;
+		
+	}
+	.people_like .pre-direction-none{
+		background: url(../images/index/peopleLike.png) 0px -38px;
+	}
+	.people_like .gun .peopleNoImg{
+		top:25px;
+		width: 12px;
+		height: 12px;
+		box-sizing:border-box;
+	}
+	.people_like .pre-radius .img,.next-radius .img{
+		width:22px;height:22px;border-radius:50%;
+/*		    position: relative;*/
+/*    top: 0px;*/
+	}

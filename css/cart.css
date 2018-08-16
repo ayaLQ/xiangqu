@@ -1,0 +1,154 @@
+.cart ul,li{
+	text-decoration:none;
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+.cart{
+	width:980px;
+	background:pink;
+	position:relative;
+	left:180px;
+}
+.check-img{
+	display:inline-block;
+	width:29px;
+	height:24px;
+	background:url(../images/cart/png8_09.png)no-repeat;
+	vertical-align:middle;
+}
+.cart-des-content{
+	border:1px solid #c3c3c3;
+}
+.imfor-top{
+    font-size: 19px;
+    font-weight: 600;
+	margin-top:44px;
+	text-align:left;
+	display:flex;
+	justify-content:space-between;
+}
+.imfor-top .pudc-top,.imfor-top .num-top,.imfor-top .pices-top,.imfor-top .del-top{
+	font-weight:500;
+	color: #9f9f9f;
+}
+.imfor-top .pudc-top{
+	margin-left: -27px;
+}
+.imfor-top .num-top{
+	position:relative;
+	left:158px;
+}
+.imfor-top .pices-top{
+	position:relative;
+	left:110px;
+}
+.imfor-top .del-top{
+	position:relative;
+	left:-18px;
+}
+.imfor>p{
+	font-size:19px;
+	font-weight:600;
+	vertical-align:bottom;
+}
+.content-box-body{
+	margin-top:42px;
+}
+.cart-title{
+	margin-left:15px;
+	font-size:30px;
+	font-weight:700;
+}
+.cart-des-content{
+	height:167px;
+	margin-top:6px;
+	text-align:center;
+	vertical-align: middle;
+	display:flex;
+	justify-content:space-between;
+}
+/*<div class="cart-des-content">
+					<div class="check-img check-"></div>
+					<a class="pic" href=""><img src="images/xq_shopinfo/man/sm/sm1.jpg" alt=""></a>
+					<div s><a>skov 梦游 原创品牌 情侣装 纯棉休闲清新文艺 短袖 全棉Tee</a></div>
+					<div class="pes">
+						<p>尺码:男M [ 梦游狗狗 ]</p>
+						<p>主要颜色:乳白色</p>
+					</div>
+					<div>
+						<button>-</button>
+						<input type="text" value="1">
+						<button>+</button>
+					</div>
+					<div>98.00<div>
+					<div>删除</div>
+				</div>*/
+.cart-des-content .check-center{
+	margin:58px 10px 15px 15px;
+}
+.cart-des-content .pic img{
+	display:inline-block;
+	width:106px;
+	height:106px;
+
+}
+.cart-des-content .pic{
+	width:106px;
+	height:106px;
+	margin-left:5px;
+	margin-top:19px;
+	border-top:2px solid #ddd; 
+	border-left:2px solid #ddd; 
+}
+.cart-des-content .title{
+	font-size:15px;
+	width:176px;
+    padding: 28px 12px 0px 27px;
+	margin-top:16px;
+}
+
+.cart-des-content .pes{
+	width:196px;
+/*	height:167px;*/
+	font-size:14px;
+	color: #9f9f9f;
+	padding: 39px 37px;
+	margin-top:18px;
+}
+.btn{
+	vertical-align:middle;
+	width:176px;
+    padding: 39px 16px;
+	margin-top:18px;
+}
+.btn .btn-left{
+	background: url(../images/cart/productNewIcon02.png) center no-repeat;
+	border:none;
+}
+.btn .btn-right{
+	border:none;
+	background: url(../images/cart/productNewIcon03.png) center no-repeat;
+}
+.cart .btn input{
+	margin:0 4px;
+	width: 38px;
+    height: 30px;	
+	line-height: 30px;
+	text-align:center;
+    border: 2px solid #1d1d1d;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+.cart .pric{
+	width:176px;
+	    padding: 39px 16px;
+		margin-top:26px;
+}
+.cart .del{
+    padding: 39px 5px 39px 0px;
+	margin-top:26px;
+width:61px;
+}
